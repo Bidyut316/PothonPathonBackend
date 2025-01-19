@@ -125,7 +125,7 @@ app.post('/homework/upload', basicAuth,upload.single('file'), (req, res) => {
     }
   
   
-      filePath = path.join('/uploads/homeworks/upload', req.file.filename);
+      filePath = path.join('/uploads/homeworks/uploads', req.file.filename);
     res.status(200).json({
       message: 'File uploaded successfully',
       path: filePath
